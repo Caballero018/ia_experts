@@ -1,0 +1,106 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Caballero018/ia_experts/blob/main/content/requirements.txt\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "id": "CNKIiQlVzDmW",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "1adef2fd-c846-4fd0-c659-444076797469"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Reading package lists... Done\n",
+            "Building dependency tree... Done\n",
+            "Reading state information... Done\n",
+            "The following additional packages will be installed:\n",
+            "  python3-pip-whl python3-setuptools-whl python3.10-venv\n",
+            "The following NEW packages will be installed:\n",
+            "  python3-pip-whl python3-setuptools-whl python3-venv python3.10-venv\n",
+            "0 upgraded, 4 newly installed, 0 to remove and 49 not upgraded.\n",
+            "Need to get 2,475 kB of archives.\n",
+            "After this operation, 2,891 kB of additional disk space will be used.\n",
+            "Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3-pip-whl all 22.0.2+dfsg-1ubuntu0.5 [1,680 kB]\n",
+            "Get:2 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3-setuptools-whl all 59.6.0-1.2ubuntu0.22.04.2 [788 kB]\n",
+            "Get:3 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3.10-venv amd64 3.10.12-1~22.04.7 [5,718 B]\n",
+            "Get:4 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 python3-venv amd64 3.10.6-1~22.04.1 [1,042 B]\n",
+            "Fetched 2,475 kB in 1s (2,427 kB/s)\n",
+            "Selecting previously unselected package python3-pip-whl.\n",
+            "(Reading database ... 123630 files and directories currently installed.)\n",
+            "Preparing to unpack .../python3-pip-whl_22.0.2+dfsg-1ubuntu0.5_all.deb ...\n",
+            "Unpacking python3-pip-whl (22.0.2+dfsg-1ubuntu0.5) ...\n",
+            "Selecting previously unselected package python3-setuptools-whl.\n",
+            "Preparing to unpack .../python3-setuptools-whl_59.6.0-1.2ubuntu0.22.04.2_all.deb ...\n",
+            "Unpacking python3-setuptools-whl (59.6.0-1.2ubuntu0.22.04.2) ...\n",
+            "Selecting previously unselected package python3.10-venv.\n",
+            "Preparing to unpack .../python3.10-venv_3.10.12-1~22.04.7_amd64.deb ...\n",
+            "Unpacking python3.10-venv (3.10.12-1~22.04.7) ...\n",
+            "Selecting previously unselected package python3-venv.\n",
+            "Preparing to unpack .../python3-venv_3.10.6-1~22.04.1_amd64.deb ...\n",
+            "Unpacking python3-venv (3.10.6-1~22.04.1) ...\n",
+            "Setting up python3-setuptools-whl (59.6.0-1.2ubuntu0.22.04.2) ...\n",
+            "Setting up python3-pip-whl (22.0.2+dfsg-1ubuntu0.5) ...\n",
+            "Setting up python3.10-venv (3.10.12-1~22.04.7) ...\n",
+            "Setting up python3-venv (3.10.6-1~22.04.1) ...\n"
+          ]
+        }
+      ],
+      "source": [
+        "!apt install python3-venv"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip freeze > requirements.txt"
+      ],
+      "metadata": {
+        "id": "PcdQuSvA3yOv"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from google.colab import drive\n",
+        "drive.mount('/content/drive')"
+      ],
+      "metadata": {
+        "id": "wVCBjfV41AoH"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
